@@ -5,11 +5,11 @@
     double num = Math.random();
     if (num > 0.7) {
   %>
-      <h2>You'll have a lucky day !!!</h2><p>(<%= num %>)</p>
+      <h2>You'll have a lucky dayy !!!</h2><p>(<%= num %>)</p>
   <%
     } else {
   %>
-      <h2>Well, life goes on ... </h2><p>(<%= num %>)</p>
+      <h2>Well, life goes onn ... </h2><p>(<%= num %>)</p>
   <%
     }
   %>
