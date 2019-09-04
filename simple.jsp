@@ -1,19 +1,23 @@
+<%@ page import="java.util.*" %>
 <html>
-<head><title>First JSP</title></head>
+<head><title>OOPS or DevOps</title></head>
 <body>
+<form method=post action="<%= request.getRequestURI() %>" >
+	Date: <%= (new java.util.Date()).toLocaleString()%>
   <%
-    double num = Math.random();
-    if (num > 0.7) {
+	Random r = new Random();
+    int num = r.nextInt(10)+1;
+    if (num > 5) {
   %>
-      <h2>You'll have a lucky dayy !!!</h2><p>(<%= num %>)</p>
+      <p style="color:Blue; font-size:35px;">DevOps!! yeah</p><p>(<%= num %>)</p>
   <%
     } else {
   %>
-      <h2>Well, life goes onn ... </h2><p>(<%= num %>)</p>
+       <p style="color:Red; font-size:30px;">OOPS!</p><p>(<%= num %>)</p>
   <%
     }
   %>
-  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
+  <input type="submit" value="Try Again">
+</form>
 </body>
 </html>
-
