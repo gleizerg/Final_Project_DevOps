@@ -13,7 +13,7 @@
   <%
     } else {
   %>
-       <p style="color:Red; font-size:30px;">OOPS!</p><p>(<%= num %>)</p>
+       <p style="color:Red; font-size:30px;">OOOPS!</p><p>(<%= num %>)</p>
   <%
     }
   %>
